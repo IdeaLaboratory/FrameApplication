@@ -1,0 +1,2 @@
+# FrameApplication
+Most of the time we create windows application from scratch and implement all structures that are very basic.  This 'FrameApplication' gives you a standard and matured framework that is flexible enough to fit to any requirement. This is a complete opensource project allows everyone to use it for both commercial and non-commercial purpose.  Any addition and improvement is welcome :)
