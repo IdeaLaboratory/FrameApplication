@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrameApplication"
+        xmlns:ViewModel="clr-namespace:FrameApplication.ViewModels"
         mc:Ignorable="d"
         DataContext="{StaticResource MainWindowViewModel}"
         Title="{Binding AppTitle}" Height="450" Width="800">
+    <Window.Resources>
+        <ViewModel:MianWindowViewModel x:Key="Command"/>
+    </Window.Resources>
     <Grid>
-        
+        <Button Content="SampleButton" HorizontalAlignment="Left" Command="{Binding SampleCommand, Source={StaticResource Command}}"   CommandParameter="{Binding}" VerticalAlignment="Top" Width="85"/>
     </Grid>
 </Window>

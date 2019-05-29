@@ -1,27 +1,20 @@
 ﻿using FrameApplication.Commands;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace FrameApplication.ViewModels
 {
     public partial class MianWindowViewModel : ViewModelBase
     {
-        private ICommand _doSomething;
-        public ICommand DoSomethingCommand
+        private ICommand sampleCommand;
+        public ICommand SampleCommand
         {
             get
             {
-                if (_doSomething == null)
+                if (sampleCommand == null)
                 {
-                    _doSomething = new CommonCommand(
-                        p => CanExecute,
-                        p => Execute());
+                    sampleCommand = new SampleCommand();
                 }
-                return _doSomething;
+                return sampleCommand;
             }
         }
     }
