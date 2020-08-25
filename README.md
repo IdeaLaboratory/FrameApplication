@@ -3,6 +3,7 @@ Most of the time we create windows application from scratch and implement all st
 
 # MVVM with Caliburn.Micro
 Caliburn rely on 'Naming convention'.
+[Note: This is segmenting the user interface into view-viewModel-Model ]
 
 Till this(https://github.com/IdeaLaboratory/FrameApplication/commit/b1add891d758ede53fa26a2474f4e78830b595ed) we have 'Views' and 'ViewModels' folders. In the folders we have Main"View" and Main"ViewModel" classes respectively.
 Bootstrapper knows what is the view model to start with and by naming convention it figure out the view class at the startup.

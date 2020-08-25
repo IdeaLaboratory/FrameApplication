@@ -7,6 +7,11 @@ namespace FrameApplication.ViewModels
     {
         public string AppTitle { get; set; } = "FrameApplication";
 
+        public string Text
+        {
+            get; set;
+        } = "Default text";
+
         public void Execute()
         {
             Trace.WriteLine("Execute command");

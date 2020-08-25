@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:FrameApplication.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Button Content="SampleButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85"/>
-    </Grid>
+    <StackPanel>
+        <Button Content="{Binding Text}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Text" Width="100" Height="30" HorizontalAlignment="Left" ></TextBox>
+    </StackPanel>
 </UserControl>
