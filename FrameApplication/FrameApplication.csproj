@@ -75,6 +75,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ViewModels\MianViewModel.cs" />
+    <Compile Include="Views\Bootstrapper.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
