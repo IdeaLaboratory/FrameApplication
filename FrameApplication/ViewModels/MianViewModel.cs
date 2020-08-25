@@ -2,7 +2,7 @@
 
 namespace FrameApplication.ViewModels
 {
-    public partial class MianWindowViewModel
+    public partial class MianViewModel
     {
         public string AppTitle { get; set; } = "FrameApplication";
 
